@@ -2,10 +2,37 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <title>TK-TEST01</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>שחמט למתחילים</title>
+  <meta name="description" content="מדריך שחמט למתחילים בעברית: הלוח, הכלים, חוקים, פתיחות, טקטיקות ומטים בסיסיים.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♞</text></svg>">
 </head>
 <body>
-  <h1>TK-TEST01</h1>
-  <p>שלום מ-GitHub Pages!</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/">
+        <span class="brand-icon" aria-hidden="true">♞</span>
+        <span>שחמט למתחילים</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="sidebar">כל השיעורים</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="רשימת שיעורים"></nav>
+    <main id="app" tabindex="-1"></main>
+  </div>
+
+  <footer class="site-footer">
+    <p>מדריך שחמט למתחילים · אתר סטטי · ההתקדמות נשמרת בדפדפן שלך בלבד</p>
+  </footer>
+
+  <script src="js/board.js"></script>
+  <script src="js/lessons.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
