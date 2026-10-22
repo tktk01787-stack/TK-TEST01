@@ -73,7 +73,7 @@
         var file = opts.flip ? 7 - f : f;
         var name = FILES[file] + rank;
         var cell = document.createElement('div');
-        var light = (file + rank) % 2 === 1;
+        var light = (file + rank) % 2 === 0; // a1 (0 + 1) is dark
         cell.className = 'sq ' + (light ? 'light' : 'dark');
         if (area[name]) cell.classList.add('area');
         if (hl[name]) cell.classList.add('hl');
